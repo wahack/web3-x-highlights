@@ -2,84 +2,86 @@ import { Translation } from "./definition"
 
 export default {
   propertyDefaults: {
-    title: "無題",
-    description: "無描述",
+    title: "Untitled",
+    description: "No description provided",
   },
   components: {
     callout: {
-      note: "筆記",
-      abstract: "摘要",
-      info: "提示",
-      todo: "待辦",
-      tip: "提示",
-      success: "成功",
-      question: "問題",
-      warning: "警告",
-      failure: "失敗",
-      danger: "危險",
-      bug: "錯誤",
-      example: "範例",
-      quote: "引用",
+      note: "Note",
+      abstract: "Abstract",
+      info: "Info",
+      todo: "Todo",
+      tip: "Tip",
+      success: "Success",
+      question: "Question",
+      warning: "Warning",
+      failure: "Failure",
+      danger: "Danger",
+      bug: "Bug",
+      example: "Example",
+      quote: "Quote",
     },
     backlinks: {
-      title: "反向連結",
-      noBacklinksFound: "無法找到反向連結",
+      title: "Backlinks",
+      noBacklinksFound: "No backlinks found",
     },
     themeToggle: {
-      lightMode: "亮色模式",
-      darkMode: "暗色模式",
+      lightMode: "Light mode",
+      darkMode: "Dark mode",
     },
     readerMode: {
-      title: "閱讀模式",
+      title: "Reader mode",
     },
     explorer: {
-      title: "探索",
+      title: "Explorer",
     },
     footer: {
       createdWith: "Created with",
     },
     graph: {
-      title: "關係圖譜",
+      title: "Graph View",
     },
     recentNotes: {
-      title: "最近的筆記",
-      seeRemainingMore: ({ remaining }) => `查看更多 ${remaining} 篇筆記 →`,
+      title: "Recent Notes",
+      seeRemainingMore: ({ remaining }) => `See ${remaining} more →`,
     },
     transcludes: {
-      transcludeOf: ({ targetSlug }) => `包含 ${targetSlug}`,
-      linkToOriginal: "指向原始筆記的連結",
+      transcludeOf: ({ targetSlug }) => `Transclude of ${targetSlug}`,
+      linkToOriginal: "Link to original",
     },
     search: {
-      title: "搜尋",
-      searchBarPlaceholder: "搜尋些什麼",
+      title: "Search",
+      searchBarPlaceholder: "Search for something",
     },
     tableOfContents: {
-      title: "目錄",
+      title: "Table of Contents",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `閱讀時間約 ${minutes} 分鐘`,
+      readingTime: ({ minutes }) => `${minutes} min read`,
     },
   },
   pages: {
     rss: {
-      recentNotes: "最近的筆記",
-      lastFewNotes: ({ count }) => `最近的 ${count} 條筆記`,
+      recentNotes: "Recent notes",
+      lastFewNotes: ({ count }) => `Last ${count} notes`,
     },
     error: {
-      title: "無法找到",
-      notFound: "私人筆記或筆記不存在。",
-      home: "返回首頁",
+      title: "Not Found",
+      notFound: "Either this page is private or doesn't exist.",
+      home: "Return to Homepage",
     },
     folderContent: {
-      folder: "資料夾",
-      itemsUnderFolder: ({ count }) => `此資料夾下有 ${count} 條筆記。`,
+      folder: "Folder",
+      itemsUnderFolder: ({ count }) =>
+        count === 1 ? "1 item under this folder." : `${count} items under this folder.`,
     },
     tagContent: {
-      tag: "標籤",
-      tagIndex: "標籤索引",
-      itemsUnderTag: ({ count }) => `此標籤下有 ${count} 條筆記。`,
-      showingFirst: ({ count }) => `顯示前 ${count} 個標籤。`,
-      totalTags: ({ count }) => `總共有 ${count} 個標籤。`,
+      tag: "Tag",
+      tagIndex: "Tag Index",
+      itemsUnderTag: ({ count }) =>
+        count === 1 ? "1 item with this tag." : `${count} items with this tag.`,
+      showingFirst: ({ count }) => `Showing first ${count} tags.`,
+      totalTags: ({ count }) => `Found ${count} total tags.`,
     },
   },
 } as const satisfies Translation

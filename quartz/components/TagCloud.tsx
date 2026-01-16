@@ -36,7 +36,7 @@ export default ((userOpts?: Partial<Options>) => {
           data-min-size={opts.minSize}
           data-max-size={opts.maxSize}
         >
-          <div class="loading">加载中...</div>
+          <div class="loading">Loading...</div>
         </div>
       </div>
     )
@@ -61,7 +61,7 @@ export default ((userOpts?: Partial<Options>) => {
           if (type === 'projects' || type === 'both') {
             const projectsDiv = document.createElement('div');
             projectsDiv.className = 'cloud-section';
-            projectsDiv.innerHTML = '<h4>项目标签云</h4><div class="cloud-tags"></div>';
+            projectsDiv.innerHTML = '<h4>Project Tag Cloud</h4><div class="cloud-tags"></div>';
             const tagsContainer = projectsDiv.querySelector('.cloud-tags');
             
             const items = data.projects.slice(0, limit);
@@ -70,32 +70,18 @@ export default ((userOpts?: Partial<Options>) => {
             
             items.forEach((item) => {
               const tag = document.createElement('a');
-              // Calculate relative path - projects are always in docs/projects/
-              const currentPath = window.location.pathname;
-              const pathParts = currentPath.split('/').filter(p => p);
-              let relativePath = '';
-              
-              // If we're in docs, calculate relative path
-              if (currentPath.includes('/docs/')) {
-                const docsIndex = pathParts.indexOf('docs');
-                const depth = pathParts.length - docsIndex - 1;
-                relativePath = depth > 0 ? '../'.repeat(depth) : './';
-                relativePath += 'projects/' + item.name;
-              } else {
-                // If not in docs, use absolute path
-                relativePath = '/docs/projects/' + item.name;
-              }
-              
-              tag.href = relativePath;
+              // Projects are at /projects/ (Quartz removes docs/ prefix in URLs)
+              // Use absolute path for simplicity - Quartz SPA will handle it
+              tag.href = '/projects/' + item.name;
               tag.className = 'internal cloud-tag';
               
-              // 计算字体大小
+              // Calculate font size
               const ratio = (item.count - minCount) / (maxCount - minCount || 1);
               const fontSize = minSize + (maxSize - minSize) * ratio;
               tag.style.fontSize = \`\${fontSize}rem\`;
               
               tag.textContent = item.name.replace(/-/g, ' ');
-              tag.title = \`\${item.name}: \${item.count}次提及\`;
+              tag.title = \`\${item.name}: \${item.count} mentions\`;
               
               tagsContainer.appendChild(tag);
             });
@@ -106,7 +92,7 @@ export default ((userOpts?: Partial<Options>) => {
           if (type === 'handlers' || type === 'both') {
             const handlersDiv = document.createElement('div');
             handlersDiv.className = 'cloud-section';
-            handlersDiv.innerHTML = '<h4>博主标签云</h4><div class="cloud-tags"></div>';
+            handlersDiv.innerHTML = '<h4>Handler Tag Cloud</h4><div class="cloud-tags"></div>';
             const tagsContainer = handlersDiv.querySelector('.cloud-tags');
             
             const items = data.handlers.slice(0, limit);
@@ -115,32 +101,18 @@ export default ((userOpts?: Partial<Options>) => {
             
             items.forEach((item) => {
               const tag = document.createElement('a');
-              // Calculate relative path - handlers are always in docs/handlers/
-              const currentPath = window.location.pathname;
-              const pathParts = currentPath.split('/').filter(p => p);
-              let relativePath = '';
-              
-              // If we're in docs, calculate relative path
-              if (currentPath.includes('/docs/')) {
-                const docsIndex = pathParts.indexOf('docs');
-                const depth = pathParts.length - docsIndex - 1;
-                relativePath = depth > 0 ? '../'.repeat(depth) : './';
-                relativePath += 'handlers/' + item.name;
-              } else {
-                // If not in docs, use absolute path
-                relativePath = '/docs/handlers/' + item.name;
-              }
-              
-              tag.href = relativePath;
+              // Handlers are at /handlers/ (Quartz removes docs/ prefix in URLs)
+              // Use absolute path for simplicity - Quartz SPA will handle it
+              tag.href = '/handlers/' + item.name;
               tag.className = 'internal cloud-tag';
               
-              // 计算字体大小
+              // Calculate font size
               const ratio = (item.count - minCount) / (maxCount - minCount || 1);
               const fontSize = minSize + (maxSize - minSize) * ratio;
               tag.style.fontSize = \`\${fontSize}rem\`;
               
               tag.textContent = \`@\${item.name}\`;
-              tag.title = \`@\${item.name}: \${item.count}次提及\`;
+              tag.title = \`@\${item.name}: \${item.count} mentions\`;
               
               tagsContainer.appendChild(tag);
             });
@@ -148,7 +120,7 @@ export default ((userOpts?: Partial<Options>) => {
             container.appendChild(handlersDiv);
           }
         } catch (error) {
-          container.innerHTML = '<div class="error">加载失败</div>';
+          container.innerHTML = '<div class="error">Failed to load</div>';
           console.error('Failed to load tag cloud data:', error);
         }
       });

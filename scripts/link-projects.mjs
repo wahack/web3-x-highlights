@@ -8,39 +8,39 @@ const docsDir = path.join(__dirname, '..', 'docs');
 const projectsDir = path.join(docsDir, 'projects');
 const handlersDir = path.join(docsDir, 'handlers');
 
-// 常见项目后缀，用于提取核心项目名称
+// Common project suffixes, used to extract core project names
 const projectSuffixes = ['Labs', 'Protocol', 'Network', 'Platform', 'Chain', 'DAO', 'Foundation'];
 
 /**
- * 从完整项目名称中提取核心名称
- * 例如: "MegaETH Frontier Mainnet Beta Launch" -> "MegaETH"
- *       "AlignerZ Labs" -> "AlignerZ Labs"
+ * Extract core name from full project name
+ * Example: "MegaETH Frontier Mainnet Beta Launch" -> "MegaETH"
+ *          "AlignerZ Labs" -> "AlignerZ Labs"
  */
 function extractProjectName(fullName) {
   const trimmed = fullName.trim();
   const words = trimmed.split(/\s+/);
   
-  // 如果第一个单词后面跟着常见后缀，则包含后缀
+  // If first word is followed by common suffix, include suffix
   if (words.length >= 2 && projectSuffixes.includes(words[1])) {
     return words.slice(0, 2).join(' ');
   }
   
-  // 否则只取第一个单词
+  // Otherwise take only the first word
   return words[0];
 }
 
 /**
- * 将项目名称转换为文件名（URL友好）
+ * Convert project name to filename (URL-friendly)
  */
 function projectNameToFilename(projectName) {
   return projectName
-    .replace(/[^\w\s-]/g, '') // 移除特殊字符
-    .replace(/\s+/g, '-')      // 空格替换为连字符
+    .replace(/[^\w\s-]/g, '') // Remove special characters
+    .replace(/\s+/g, '-')      // Replace spaces with hyphens
     .toLowerCase();
 }
 
 /**
- * 扫描所有 markdown 文件，提取项目名称
+ * Scan all markdown files to extract project names
  */
 async function scanProjects() {
   const files = await fs.readdir(docsDir);
@@ -49,7 +49,7 @@ async function scanProjects() {
   const projectMap = new Map(); // fullName -> coreName
   const projectFiles = new Map(); // coreName -> Set of files mentioning it
   
-  // 匹配 **项目名**: 格式
+  // Match **project name**: format
   const projectRegex = /\*\*([^*]+?)\*\*:/g;
   
   for (const file of mdFiles) {
@@ -61,12 +61,12 @@ async function scanProjects() {
       const fullName = match[1].trim();
       const coreName = extractProjectName(fullName);
       
-      // 记录项目映射
+      // Record project mapping
       if (!projectMap.has(fullName)) {
         projectMap.set(fullName, coreName);
       }
       
-      // 记录哪些文件提到了这个项目
+      // Record which files mention this project
       if (!projectFiles.has(coreName)) {
         projectFiles.set(coreName, new Set());
       }
@@ -78,48 +78,48 @@ async function scanProjects() {
 }
 
 /**
- * 扫描所有 markdown 文件，提取博主（handlers）
+ * Scan all markdown files to extract handlers
  */
 async function scanHandlers() {
   const files = await fs.readdir(docsDir);
   const mdFiles = files.filter(f => f.endsWith('.md') && f !== 'index.md');
   
-  const handlerSet = new Set(); // 所有唯一的博主用户名
+  const handlerSet = new Set(); // All unique handler usernames
   const handlerFiles = new Map(); // username -> Set of files mentioning it
   
-  // 匹配 @username 格式（在行首或前面有空格/连字符）
+  // Match @username format (at line start or preceded by space/hyphen)
   const handlerRegex = /(?:^|\s)(@[\w_]+)/gm;
-  // 匹配 X 链接格式：https://x.com/username/status/...
+  // Match X link format: https://x.com/username/status/...
   const xLinkRegex = /https?:\/\/(?:www\.)?(?:x\.com|twitter\.com)\/([\w_]+)\/status\//gi;
   
   for (const file of mdFiles) {
     const filePath = path.join(docsDir, file);
     const content = await fs.readFile(filePath, 'utf-8');
     
-    // 从 @username 格式提取
+    // Extract from @username format
     let match;
     while ((match = handlerRegex.exec(content)) !== null) {
-      const username = match[1]; // 包含 @ 符号
-      const usernameWithoutAt = username.substring(1); // 去掉 @ 符号
+      const username = match[1]; // Includes @ symbol
+      const usernameWithoutAt = username.substring(1); // Remove @ symbol
       
       handlerSet.add(usernameWithoutAt);
       
-      // 记录哪些文件提到了这个博主
+      // Record which files mention this handler
       if (!handlerFiles.has(usernameWithoutAt)) {
         handlerFiles.set(usernameWithoutAt, new Set());
       }
       handlerFiles.get(usernameWithoutAt).add(file);
     }
     
-    // 从 X 链接中提取用户名
+    // Extract username from X links
     while ((match = xLinkRegex.exec(content)) !== null) {
-      const usernameFromLink = match[1]; // x.com 和 status 之间的部分
+      const usernameFromLink = match[1]; // Part between x.com and status
       
-      // 只添加有效的用户名（至少1个字符，只包含字母数字下划线）
+      // Only add valid usernames (at least 1 character, alphanumeric and underscores only)
       if (usernameFromLink && /^[\w_]+$/.test(usernameFromLink)) {
         handlerSet.add(usernameFromLink);
         
-        // 记录哪些文件提到了这个博主
+        // Record which files mention this handler
         if (!handlerFiles.has(usernameFromLink)) {
           handlerFiles.set(usernameFromLink, new Set());
         }
@@ -132,55 +132,55 @@ async function scanHandlers() {
 }
 
 /**
- * 创建项目文件
+ * Create project files
  */
 async function createProjectFiles(projectFiles) {
-  // 确保 projects 目录存在
+  // Ensure projects directory exists
   await fs.mkdir(projectsDir, { recursive: true });
   
   for (const [coreName, files] of projectFiles.entries()) {
     const filename = projectNameToFilename(coreName) + '.md';
     const filePath = path.join(projectsDir, filename);
     
-    // 检查文件是否已存在
+    // Check if file already exists
     try {
       await fs.access(filePath);
-      console.log(`项目文件已存在: ${filename}`);
+      console.log(`Project file already exists: ${filename}`);
     } catch {
-      // 文件不存在，创建它
+      // File doesn't exist, create it
       const content = `# ${coreName}\n\n`;
       await fs.writeFile(filePath, content, 'utf-8');
-      console.log(`创建项目文件: ${filename}`);
+      console.log(`Created project file: ${filename}`);
     }
   }
 }
 
 /**
- * 创建博主（handler）文件
+ * Create handler files
  */
 async function createHandlerFiles(handlerFiles) {
-  // 确保 handlers 目录存在
+  // Ensure handlers directory exists
   await fs.mkdir(handlersDir, { recursive: true });
   
   for (const [username, files] of handlerFiles.entries()) {
     const filename = username.toLowerCase() + '.md';
     const filePath = path.join(handlersDir, filename);
     
-    // 检查文件是否已存在
+    // Check if file already exists
     try {
       await fs.access(filePath);
-      console.log(`博主文件已存在: ${filename}`);
+      console.log(`Handler file already exists: ${filename}`);
     } catch {
-      // 文件不存在，创建它
+      // File doesn't exist, create it
       const content = `# @${username}\n\n`;
       await fs.writeFile(filePath, content, 'utf-8');
-      console.log(`创建博主文件: ${filename}`);
+      console.log(`Created handler file: ${filename}`);
     }
   }
 }
 
 /**
- * 替换文章中的项目名称为链接
+ * Replace project names in articles with links
  */
 async function replaceProjectLinks(projectMap) {
   const files = await fs.readdir(docsDir);
@@ -191,7 +191,7 @@ async function replaceProjectLinks(projectMap) {
     let content = await fs.readFile(filePath, 'utf-8');
     let modified = false;
     
-    // 替换所有 **项目名**: 为 [[projects/项目名|项目名]]:
+    // Replace all **project name**: with [[projects/project name|project name]]:
     for (const [fullName, coreName] of projectMap.entries()) {
       const escapedFullName = fullName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       const regex = new RegExp(`\\*\\*${escapedFullName}\\*\\*:`, 'g');
@@ -206,13 +206,13 @@ async function replaceProjectLinks(projectMap) {
     
     if (modified) {
       await fs.writeFile(filePath, content, 'utf-8');
-      console.log(`更新文件: ${file}`);
+      console.log(`Updated file: ${file}`);
     }
   }
 }
 
 /**
- * 替换文章中的博主提及为链接
+ * Replace handler mentions in articles with links
  */
 async function replaceHandlerLinks(handlerSet) {
   const files = await fs.readdir(docsDir);
@@ -223,39 +223,39 @@ async function replaceHandlerLinks(handlerSet) {
     let content = await fs.readFile(filePath, 'utf-8');
     let modified = false;
     
-    // 按用户名长度降序排序，先替换长的用户名，避免部分匹配
+    // Sort by username length descending, replace longer usernames first to avoid partial matches
     const sortedHandlers = Array.from(handlerSet).sort((a, b) => b.length - a.length);
     
     for (const username of sortedHandlers) {
       const escapedUsername = username.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       const linkPattern = `[[handlers/${username.toLowerCase()}|@${username}]]`;
       
-      // 如果已经链接了，跳过
+      // If already linked, skip
       if (content.includes(linkPattern)) {
         continue;
       }
       
-      // 使用单词边界确保完整匹配用户名
-      // @username 后面不能是字母、数字或下划线
-      // 这样可以避免 @web3 匹配 @web3_xiaoyao
+      // Use word boundaries to ensure complete username match
+      // @username must not be followed by letters, numbers, or underscores
+      // This prevents @web3 from matching @web3_xiaoyao
       const lines = content.split('\n');
       const newLines = lines.map(line => {
-        // 如果这一行已经包含链接，跳过（检查是否已经有这个用户的链接）
+        // If line already contains link, skip (check if this user's link already exists)
         if (line.includes(`[[handlers/${username.toLowerCase()}|`)) {
           return line;
         }
         
-        // 检查是否已经有其他链接包含了这个用户名（避免重复链接）
-        // 例如：[[handlers/web3|@web3]]_xiaoyao 这种情况
+        // Check if another link already contains this username (avoid duplicate links)
+        // Example: [[handlers/web3|@web3]]_xiaoyao
         if (line.includes(`[[handlers/`) && line.includes(`@${username}`)) {
-          // 如果已经有链接但格式不对，需要修复
-          // 但这里先跳过，避免重复处理
+          // If link exists but format is wrong, needs fixing
+          // But skip here to avoid duplicate processing
           return line;
         }
         
-        // 构建正则表达式：@username 后面不能是字母、数字或下划线
-        // 使用负向前瞻：(?![\w_]) 表示后面不能是单词字符或下划线
-        // 这样可以确保 @web3 不会匹配 @web3_xiaoyao
+        // Build regex: @username must not be followed by letters, numbers, or underscores
+        // Use negative lookahead: (?![\w_]) means cannot be followed by word characters or underscores
+        // This ensures @web3 won't match @web3_xiaoyao
         const regex = new RegExp(`@${escapedUsername}(?![\w_])`, 'g');
         
         if (regex.test(line)) {
@@ -273,39 +273,39 @@ async function replaceHandlerLinks(handlerSet) {
     
     if (modified) {
       await fs.writeFile(filePath, content, 'utf-8');
-      console.log(`更新文件（博主链接）: ${file}`);
+      console.log(`Updated file (handler links): ${file}`);
     }
   }
 }
 
 /**
- * 主函数
+ * Main function
  */
 async function main() {
-  console.log('开始扫描项目...');
+  console.log('Starting project scan...');
   const { projectMap, projectFiles } = await scanProjects();
   
-  console.log(`\n找到 ${projectMap.size} 个不同的项目名称`);
-  console.log(`提取出 ${projectFiles.size} 个核心项目`);
+  console.log(`\nFound ${projectMap.size} different project names`);
+  console.log(`Extracted ${projectFiles.size} core projects`);
   
-  console.log('\n创建项目文件...');
+  console.log('\nCreating project files...');
   await createProjectFiles(projectFiles);
   
-  console.log('\n替换文章中的项目链接...');
+  console.log('\nReplacing project links in articles...');
   await replaceProjectLinks(projectMap);
   
-  console.log('\n开始扫描博主...');
+  console.log('\nStarting handler scan...');
   const { handlerSet, handlerFiles } = await scanHandlers();
   
-  console.log(`\n找到 ${handlerSet.size} 个不同的博主`);
+  console.log(`\nFound ${handlerSet.size} different handlers`);
   
-  console.log('\n创建博主文件...');
+  console.log('\nCreating handler files...');
   await createHandlerFiles(handlerFiles);
   
-  console.log('\n替换文章中的博主链接...');
+  console.log('\nReplacing handler links in articles...');
   await replaceHandlerLinks(handlerSet);
   
-  console.log('\n完成！');
+  console.log('\nDone!');
 }
 
 main().catch(console.error);

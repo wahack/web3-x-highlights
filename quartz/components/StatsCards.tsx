@@ -26,7 +26,7 @@ export default ((userOpts?: Partial<Options>) => {
           class="stats-grid" 
           data-show-icons={opts.showIcons}
         >
-          <div class="loading">加载中...</div>
+          <div class="loading">Loading...</div>
         </div>
       </div>
     )
@@ -47,25 +47,25 @@ export default ((userOpts?: Partial<Options>) => {
           
           const stats = [
             {
-              label: '总项目数',
+              label: 'Total Projects',
               value: data.stats.totalProjects,
               icon: '📊',
               color: 'primary'
             },
             {
-              label: '总博主数',
+              label: 'Total Handlers',
               value: data.stats.totalHandlers,
               icon: '👥',
               color: 'secondary'
             },
             {
-              label: '文章总数',
+              label: 'Total Articles',
               value: data.stats.totalArticles,
               icon: '📝',
               color: 'tertiary'
             },
             {
-              label: '热门项目',
+              label: 'Top Project',
               value: data.stats.topProject.replace(/-/g, ' '),
               icon: '🔥',
               color: 'accent',
@@ -102,7 +102,7 @@ export default ((userOpts?: Partial<Options>) => {
             container.appendChild(card);
           });
         } catch (error) {
-          container.innerHTML = '<div class="error">加载失败</div>';
+          container.innerHTML = '<div class="error">Failed to load</div>';
           console.error('Failed to load stats:', error);
         }
       });

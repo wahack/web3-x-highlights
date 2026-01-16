@@ -1,4 +1,6 @@
 import Content from "./pages/Content"
+import ContentWithBacklinks from "./pages/ContentWithBacklinks"
+import ConditionalContent from "./pages/ConditionalContent"
 import TagContent from "./pages/TagContent"
 import FolderContent from "./pages/FolderContent"
 import NotFound from "./pages/404"
@@ -30,6 +32,8 @@ import StatsCards from "./StatsCards"
 export {
   ArticleTitle,
   Content,
+  ContentWithBacklinks,
+  ConditionalContent,
   TagContent,
   FolderContent,
   Darkmode,

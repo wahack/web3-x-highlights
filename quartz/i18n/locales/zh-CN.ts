@@ -2,84 +2,86 @@ import { Translation } from "./definition"
 
 export default {
   propertyDefaults: {
-    title: "无题",
-    description: "无描述",
+    title: "Untitled",
+    description: "No description provided",
   },
   components: {
     callout: {
-      note: "笔记",
-      abstract: "摘要",
-      info: "提示",
-      todo: "待办",
-      tip: "提示",
-      success: "成功",
-      question: "问题",
-      warning: "警告",
-      failure: "失败",
-      danger: "危险",
-      bug: "错误",
-      example: "示例",
-      quote: "引用",
+      note: "Note",
+      abstract: "Abstract",
+      info: "Info",
+      todo: "Todo",
+      tip: "Tip",
+      success: "Success",
+      question: "Question",
+      warning: "Warning",
+      failure: "Failure",
+      danger: "Danger",
+      bug: "Bug",
+      example: "Example",
+      quote: "Quote",
     },
     backlinks: {
-      title: "反向链接",
-      noBacklinksFound: "无法找到反向链接",
+      title: "Backlinks",
+      noBacklinksFound: "No backlinks found",
     },
     themeToggle: {
-      lightMode: "亮色模式",
-      darkMode: "暗色模式",
+      lightMode: "Light mode",
+      darkMode: "Dark mode",
     },
     readerMode: {
-      title: "阅读模式",
+      title: "Reader mode",
     },
     explorer: {
-      title: "探索",
+      title: "Explorer",
     },
     footer: {
       createdWith: "Created with",
     },
     graph: {
-      title: "关系图谱",
+      title: "Graph View",
     },
     recentNotes: {
-      title: "最近的笔记",
-      seeRemainingMore: ({ remaining }) => `查看更多${remaining}篇笔记 →`,
+      title: "Recent Notes",
+      seeRemainingMore: ({ remaining }) => `See ${remaining} more →`,
     },
     transcludes: {
-      transcludeOf: ({ targetSlug }) => `包含${targetSlug}`,
-      linkToOriginal: "指向原始笔记的链接",
+      transcludeOf: ({ targetSlug }) => `Transclude of ${targetSlug}`,
+      linkToOriginal: "Link to original",
     },
     search: {
-      title: "搜索",
-      searchBarPlaceholder: "搜索些什么",
+      title: "Search",
+      searchBarPlaceholder: "Search for something",
     },
     tableOfContents: {
-      title: "目录",
+      title: "Table of Contents",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `${minutes}分钟阅读`,
+      readingTime: ({ minutes }) => `${minutes} min read`,
     },
   },
   pages: {
     rss: {
-      recentNotes: "最近的笔记",
-      lastFewNotes: ({ count }) => `最近的${count}条笔记`,
+      recentNotes: "Recent notes",
+      lastFewNotes: ({ count }) => `Last ${count} notes`,
     },
     error: {
-      title: "无法找到",
-      notFound: "私有笔记或笔记不存在。",
-      home: "返回首页",
+      title: "Not Found",
+      notFound: "Either this page is private or doesn't exist.",
+      home: "Return to Homepage",
     },
     folderContent: {
-      folder: "文件夹",
-      itemsUnderFolder: ({ count }) => `此文件夹下有${count}条笔记。`,
+      folder: "Folder",
+      itemsUnderFolder: ({ count }) =>
+        count === 1 ? "1 item under this folder." : `${count} items under this folder.`,
     },
     tagContent: {
-      tag: "标签",
-      tagIndex: "标签索引",
-      itemsUnderTag: ({ count }) => `此标签下有${count}条笔记。`,
-      showingFirst: ({ count }) => `显示前${count}个标签。`,
-      totalTags: ({ count }) => `总共有${count}个标签。`,
+      tag: "Tag",
+      tagIndex: "Tag Index",
+      itemsUnderTag: ({ count }) =>
+        count === 1 ? "1 item with this tag." : `${count} items with this tag.`,
+      showingFirst: ({ count }) => `Showing first ${count} tags.`,
+      totalTags: ({ count }) => `Found ${count} total tags.`,
     },
   },
 } as const satisfies Translation

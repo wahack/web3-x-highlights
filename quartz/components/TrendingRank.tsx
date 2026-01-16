@@ -34,12 +34,12 @@ export default ((userOpts?: Partial<Options>) => {
   }: QuartzComponentProps) => {
     const opts = { ...defaultOptions, ...userOpts }
     
-    // 在客户端加载数据
+    // Load data on client side
     return (
       <div class={classNames(displayClass, "trending-rank")}>
         {opts.title && <h3>{opts.title}</h3>}
         <div class="trending-content" data-type={opts.type} data-limit={opts.limit} data-show-trend={opts.showTrend}>
-          <div class="loading">加载中...</div>
+          <div class="loading">Loading...</div>
         </div>
       </div>
     )
@@ -64,7 +64,7 @@ export default ((userOpts?: Partial<Options>) => {
           if (type === 'projects' || type === 'both') {
             const projectsDiv = document.createElement('div');
             projectsDiv.className = 'trending-section';
-            projectsDiv.innerHTML = '<h4>热门项目</h4><ul class="trending-list"></ul>';
+            projectsDiv.innerHTML = '<h4>Trending Projects</h4><ul class="trending-list"></ul>';
             const list = projectsDiv.querySelector('.trending-list');
             
             data.projects.slice(0, limit).forEach((item, index) => {
@@ -76,13 +76,13 @@ export default ((userOpts?: Partial<Options>) => {
               rank.textContent = \`#\${index + 1}\`;
               
               const link = document.createElement('a');
-              link.href = \`/docs/projects/\${item.name}\`;
+              link.href = \`/projects/\${item.name}\`;
               link.className = 'internal trending-link';
               link.textContent = item.name.replace(/-/g, ' ');
               
               const count = document.createElement('span');
               count.className = 'count';
-              count.textContent = \`\${item.count}次\`;
+              count.textContent = \`\${item.count} times\`;
               
               li.appendChild(rank);
               li.appendChild(link);
@@ -92,7 +92,7 @@ export default ((userOpts?: Partial<Options>) => {
                 const trend = document.createElement('span');
                 trend.className = 'trend up';
                 trend.textContent = '↑';
-                trend.title = \`最近提及: \${item.recentCount}次\`;
+                trend.title = \`Recent mentions: \${item.recentCount} times\`;
                 li.appendChild(trend);
               }
               
@@ -105,7 +105,7 @@ export default ((userOpts?: Partial<Options>) => {
           if (type === 'handlers' || type === 'both') {
             const handlersDiv = document.createElement('div');
             handlersDiv.className = 'trending-section';
-            handlersDiv.innerHTML = '<h4>热门博主</h4><ul class="trending-list"></ul>';
+            handlersDiv.innerHTML = '<h4>Trending Handlers</h4><ul class="trending-list"></ul>';
             const list = handlersDiv.querySelector('.trending-list');
             
             data.handlers.slice(0, limit).forEach((item, index) => {
@@ -117,13 +117,13 @@ export default ((userOpts?: Partial<Options>) => {
               rank.textContent = \`#\${index + 1}\`;
               
               const link = document.createElement('a');
-              link.href = \`/docs/handlers/\${item.name}\`;
+              link.href = \`/handlers/\${item.name}\`;
               link.className = 'internal trending-link';
               link.textContent = \`@\${item.name}\`;
               
               const count = document.createElement('span');
               count.className = 'count';
-              count.textContent = \`\${item.count}次\`;
+              count.textContent = \`\${item.count} times\`;
               
               li.appendChild(rank);
               li.appendChild(link);
@@ -133,7 +133,7 @@ export default ((userOpts?: Partial<Options>) => {
                 const trend = document.createElement('span');
                 trend.className = 'trend up';
                 trend.textContent = '↑';
-                trend.title = \`最近提及: \${item.recentCount}次\`;
+                trend.title = \`Recent mentions: \${item.recentCount} times\`;
                 li.appendChild(trend);
               }
               
@@ -143,7 +143,7 @@ export default ((userOpts?: Partial<Options>) => {
             container.appendChild(handlersDiv);
           }
         } catch (error) {
-          container.innerHTML = '<div class="error">加载失败</div>';
+          container.innerHTML = '<div class="error">Failed to load</div>';
           console.error('Failed to load trending data:', error);
         }
       });

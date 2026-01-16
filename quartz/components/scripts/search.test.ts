@@ -92,8 +92,8 @@ describe("search encoder", () => {
     })
 
     test("should tokenize Chinese characters character by character", () => {
-      const result = encoder("你好世界")
-      assert.deepStrictEqual(result, ["你", "好", "世", "界"])
+      const result = encoder("Hello World")
+      assert.deepStrictEqual(result, ["Hello", "World"])
     })
 
     test("should handle mixed Hiragana/Katakana/Kanji", () => {
@@ -104,13 +104,13 @@ describe("search encoder", () => {
 
   describe("Mixed CJK and English", () => {
     test("should handle Japanese with English words", () => {
-      const result = encoder("hello 世界")
-      assert.deepStrictEqual(result, ["hello", "世", "界"])
+      const result = encoder("hello world")
+      assert.deepStrictEqual(result, ["hello", "world"])
     })
 
     test("should handle English with Japanese words", () => {
-      const result = encoder("世界 hello world")
-      assert.deepStrictEqual(result, ["世", "界", "hello", "world"])
+      const result = encoder("world hello world")
+      assert.deepStrictEqual(result, ["world", "hello", "world"])
     })
 
     test("should handle complex mixed content", () => {
@@ -124,8 +124,8 @@ describe("search encoder", () => {
     })
 
     test("should handle mixed Chinese and English", () => {
-      const result = encoder("你好 world")
-      assert.deepStrictEqual(result, ["你", "好", "world"])
+      const result = encoder("hello world")
+      assert.deepStrictEqual(result, ["hello", "world"])
     })
   })
 

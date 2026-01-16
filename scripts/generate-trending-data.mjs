@@ -8,7 +8,7 @@ const docsDir = path.join(__dirname, '..', 'docs');
 const publicDir = path.join(__dirname, '..', 'public');
 
 /**
- * 统计项目和博主的提及次数
+ * Count mentions of projects and handlers
  */
 async function generateTrendingData() {
   const files = await fs.readdir(docsDir);
@@ -19,9 +19,9 @@ async function generateTrendingData() {
   const projectDates = new Map(); // project -> Set of dates
   const handlerDates = new Map(); // handler -> Set of dates
   
-  // 匹配项目链接 [[projects/xxx|...]]
+  // Match project links [[projects/xxx|...]]
   const projectRegex = /\[\[projects\/([^\|]+)\|/g;
-  // 匹配博主链接 [[handlers/xxx|...]]
+  // Match handler links [[handlers/xxx|...]]
   const handlerRegex = /\[\[handlers\/([^\|]+)\|/g;
   
   for (const file of mdFiles) {
@@ -34,7 +34,7 @@ async function generateTrendingData() {
     const coreReportsMatch = content.match(/##\s+\*{0,2}Core Research Reports\*{0,2}\s*\n([\s\S]*?)(?=\n##|$)/i);
     const coreReportsContent = coreReportsMatch ? coreReportsMatch[1] : '';
     
-    // 统计项目 - 只从 Core Research Reports 部分提取
+    // Count projects - only extract from Core Research Reports section
     let match;
     if (coreReportsContent) {
       // Reset regex lastIndex
@@ -49,7 +49,7 @@ async function generateTrendingData() {
       }
     }
     
-    // 统计博主 - 从整个文件提取（保持原有行为）
+    // Count handlers - extract from entire file (maintain original behavior)
     handlerRegex.lastIndex = 0;
     while ((match = handlerRegex.exec(content)) !== null) {
       const handler = match[1];
@@ -61,7 +61,7 @@ async function generateTrendingData() {
     }
   }
   
-  // 转换为数组并排序
+  // Convert to array and sort
   const projects = Array.from(projectMentions.entries())
     .map(([name, count]) => ({
       name,
@@ -80,7 +80,7 @@ async function generateTrendingData() {
     }))
     .sort((a, b) => b.count - a.count);
   
-  // 计算趋势（最近7天的提及次数）
+  // Calculate trend (mentions in last 7 days)
   const recentDays = 7;
   const now = new Date();
   const recentThreshold = new Date(now.getTime() - recentDays * 24 * 60 * 60 * 1000);
@@ -147,23 +147,23 @@ async function generateTrendingData() {
     generatedAt: new Date().toISOString()
   };
   
-  // 确保 public 和 docs 目录存在
+  // Ensure public and docs directories exist
   await fs.mkdir(publicDir, { recursive: true });
   await fs.mkdir(docsDir, { recursive: true });
   
-  // 写入 JSON 文件到两个位置
+  // Write JSON files to both locations
   const publicPath = path.join(publicDir, 'trending-data.json');
   const docsPath = path.join(docsDir, 'trending-data.json');
   
   await fs.writeFile(publicPath, JSON.stringify(data, null, 2), 'utf-8');
   await fs.writeFile(docsPath, JSON.stringify(data, null, 2), 'utf-8');
   
-  console.log(`生成趋势数据: ${publicPath}`);
-  console.log(`生成趋势数据: ${docsPath}`);
-  console.log(`- 项目总数: ${projects.length}`);
-  console.log(`- 博主总数: ${handlers.length}`);
-  console.log(`- Top 10 项目: ${projects.slice(0, 10).map(p => p.name).join(', ')}`);
-  console.log(`- Top 10 博主: ${handlers.slice(0, 10).map(h => h.name).join(', ')}`);
+  console.log(`Generated trending data: ${publicPath}`);
+  console.log(`Generated trending data: ${docsPath}`);
+  console.log(`- Total projects: ${projects.length}`);
+  console.log(`- Total handlers: ${handlers.length}`);
+  console.log(`- Top 10 projects: ${projects.slice(0, 10).map(p => p.name).join(', ')}`);
+  console.log(`- Top 10 handlers: ${handlers.slice(0, 10).map(h => h.name).join(', ')}`);
 }
 
 generateTrendingData().catch(console.error);
