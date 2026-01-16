@@ -23,6 +23,19 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
+    // Show trending components on index page
+    Component.ConditionalRender({
+      component: Component.StatsCards({ title: "数据概览", showIcons: true }),
+      condition: (page) => page.fileData.slug === "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.TagCloud({ title: "热点标签云", type: "both", limit: 40, minSize: 0.9, maxSize: 1.8 }),
+      condition: (page) => page.fileData.slug === "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.TrendingRank({ title: "热门排行", type: "both", limit: 10, showTrend: true }),
+      condition: (page) => page.fileData.slug === "index",
+    }),
     Component.TagList(),
   ],
   left: [
@@ -66,3 +79,4 @@ export const defaultListPageLayout: PageLayout = {
   ],
   right: [],
 }
+

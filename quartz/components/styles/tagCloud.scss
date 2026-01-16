@@ -1,0 +1,64 @@
+.tag-cloud {
+  margin: 1rem 0;
+
+  h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+
+  .cloud-content {
+    .loading,
+    .error {
+      color: var(--gray);
+      font-style: italic;
+    }
+
+    .cloud-section {
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem;
+        color: var(--secondary);
+        font-weight: 600;
+      }
+
+      .cloud-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background: var(--highlight);
+        border-radius: 8px;
+        min-height: 100px;
+
+        .cloud-tag {
+          display: inline-block;
+          padding: 0.3rem 0.6rem;
+          margin: 0.2rem;
+          background: var(--light);
+          color: var(--dark);
+          text-decoration: none;
+          border-radius: 6px;
+          transition: all 0.2s;
+          white-space: nowrap;
+          border: 1px solid var(--lightgray);
+          font-weight: 500;
+
+          &:hover {
+            background: var(--secondary);
+            color: var(--light);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+}

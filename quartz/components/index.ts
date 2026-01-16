@@ -23,6 +23,9 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import TrendingRank from "./TrendingRank"
+import TagCloud from "./TagCloud"
+import StatsCards from "./StatsCards"
 
 export {
   ArticleTitle,
@@ -50,4 +53,7 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  TrendingRank,
+  TagCloud,
+  StatsCards,
 }
