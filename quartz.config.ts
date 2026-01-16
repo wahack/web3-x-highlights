@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "X Web3 Trends",
+    pageTitle: "X Web3 Highlights",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,

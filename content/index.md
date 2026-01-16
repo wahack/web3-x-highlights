@@ -1,4 +1,4 @@
 ---
-title: Welcome to X Web3 Trending
+title: Welcome to X Web3 Highlights
 ---
 
