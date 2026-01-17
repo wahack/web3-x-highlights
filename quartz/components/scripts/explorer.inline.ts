@@ -213,26 +213,28 @@ async function setupExplorer(currentSlug: FullSlug) {
     }
     
     // Filter files based on language
-    if (targetLang === 'zh') {
-      trie.filter((node) => {
-        if (node.isFolder) return true
-        if (node.slugSegment === "projects" || node.slugSegment === "handlers") return true
-        if (node.slug === "index") return true
-        const slug = node.slug || ''
-        // Show only .zh files
+    // Note: If files don't have language suffixes, show all files regardless of language preference
+    trie.filter((node) => {
+      if (node.isFolder) return true
+      if (node.slugSegment === "projects" || node.slugSegment === "handlers") return true
+      if (node.slug === "index") return true
+      
+      const slug = node.slug || ''
+      const hasLangSuffix = slug.endsWith('.zh') || slug.endsWith('-zh') || 
+                           slug.endsWith('.en') || slug.endsWith('-en')
+      
+      // If file has no language suffix, show it (for backward compatibility)
+      if (!hasLangSuffix) {
+        return true
+      }
+      
+      // If file has language suffix, filter based on target language
+      if (targetLang === 'zh') {
         return slug.endsWith('.zh') || slug.endsWith('-zh')
-      })
-    } else {
-      trie.filter((node) => {
-        if (node.isFolder) return true
-        if (node.slugSegment === "projects" || node.slugSegment === "handlers") return true
-        if (node.slug === "index") return true
-        const slug = node.slug || ''
-        // Show only .en files or files without language suffix
-        return slug.endsWith('.en') || slug.endsWith('-en') || 
-               (!slug.includes('.zh') && !slug.includes('-zh'))
-      })
-    }
+      } else {
+        return slug.endsWith('.en') || slug.endsWith('-en')
+      }
+    })
 
     // Get folder paths for state management
     const folderPaths = trie.getFolderPaths()
