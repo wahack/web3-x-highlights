@@ -34,8 +34,8 @@
 - [[projects/alpha-platform|Alpha Platform (Opportunity Aggregator) — Chinese Community Insights]]: “Alpha 2.0” integrates Web3 experiences into exchanges; processed $1T+ in trades last year; 17M users received$ 780M in airdrops; 2025 recap: 136 airdrops, 2,500+ curated assets across 15+ chains. Seen as infrastructure determining the ceiling; early studios scaled from 10 to 60 accounts with 8–9K USDT per account potential; mechanism changes led to high churn but outsized early returns; execution and scale are key.
     - [[handlers/ee|@ee]] (Sea) [Link](https://x.com/haibianchui/status/2006350917621387273)
     - [[handlers/gate|@Gate]] Chinese [Link](https://x.com/Gate_zh/status/2006281701916336295)
-    - @Winnie [Link](https://x.com/li_sheng84841/status/2006351367502541026)
-    - @XiaoShang [Link](https://x.com/xiaoshangshawn/status/2006256204155347202)
+    - [[handlers/winnie|@Winnie]] [Link](https://x.com/li_sheng84841/status/2006351367502541026)
+    - [[handlers/xiaoshang|@XiaoShang]] [Link](https://x.com/xiaoshangshawn/status/2006256204155347202)
     - [[handlers/0x|@0x]] Hamster [Link](https://x.com/0xcangshu/status/2006240596974063794)
 
 ## Airdrop Information
@@ -57,7 +57,7 @@
 - [[projects/aida|AIDA ($AIDA) Airdrop]]: Linked to AIDA trading terminal with 16%/8% referral rewards, trading battles, and a$ 50 welcome bonus.
     - [[handlers/dreamsgrowth|@Dreamsgrowth]] [Link](https://x.com/Dreamsgrowth/status/2006200478934429855)
 - [[projects/airdrop|Airdrop Case Studies (Chinese Community)]]: Lessons from recent cycles: Aster (Perp DEX, heavy mention volume, outsized returns amid FUD); Nillion (low-cost server + 0.05 ETH stake; post-advocacy payout of 500+ tokens per account); Wayfinder (underrated DeFi project; deposit $60 + staking to receive 300+ tokens; peak ~$0.6 per token); Lighter (misjudged later-stage costs; TGE delivered 5x odds in Perp window); Boundless (missed due to not mastering fill rules; leverage of capital and manpower matters); Plasma/Echo (IEO/launch participation; 20–30x returns with KYC and decisive execution); 0G (decentralized AI infra; earned via consistent content output/Kaito, ranked 100+).
-    - @Winnie [Link](https://x.com/li_sheng84841/status/2006351367502541026)
+    - [[handlers/winnie|@Winnie]] [Link](https://x.com/li_sheng84841/status/2006351367502541026)
     - [[handlers/0xja|@0xJA]] [Link](https://x.com/0xallen69/status/2006310299394073045)
     - [[handlers/0xja|@0xJA]] [Link](https://x.com/JXiaoLoong/status/2006385975212036440)
 
@@ -79,7 +79,7 @@
 - [[projects/vibe|Vibe Coding (Strategy Scripting via Natural Language)]]: Describe logic (e.g., indicator golden cross + whale inflow) in plain language; AI generates executable scripts to improve trading efficiency.
     - [[handlers/kion|@Kion]] [Link](https://x.com/Kionlinxi/status/2006280465280557511)
 - [[projects/year-end|Year-End Risk Management Note]]: With fragmented liquidity at year-end, consider de-risking and rotating back to majors; avoid chasing new listings or taking sides in groups.
-    - @NotTodayForEffort [Link](https://x.com/mauvebb17/status/2006196622401888270)
+    - [[handlers/nottodayforeffort|@NotTodayForEffort]] [Link](https://x.com/mauvebb17/status/2006196622401888270)
 - [[projects/airaaagent|AiraaAgent Participation Guide]]: Detailed, step-by-step trading and participation routes to make involvement replicable and scalable.
     - [[handlers/lumi|@Lumi]] MT Crypto.edge🦭| MemeMax⚡️ [Link](https://x.com/lumisaigon3/status/2006513632482611205)
 
