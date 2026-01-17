@@ -194,6 +194,45 @@ async function setupExplorer(currentSlug: FullSlug) {
           break
       }
     }
+    
+    // Apply language-based filtering on client side
+    const currentSlug = document.body?.dataset?.slug || ''
+    let targetLang = 'en' // default
+    
+    // Determine target language from current page slug
+    if (currentSlug.endsWith('.zh') || currentSlug.endsWith('-zh')) {
+      targetLang = 'zh'
+    } else if (currentSlug.endsWith('.en') || currentSlug.endsWith('-en')) {
+      targetLang = 'en'
+    } else {
+      // Try to get from localStorage (set by language detection)
+      const savedLang = localStorage.getItem('quartz-language-preference')
+      if (savedLang === 'zh-CN') {
+        targetLang = 'zh'
+      }
+    }
+    
+    // Filter files based on language
+    if (targetLang === 'zh') {
+      trie.filter((node) => {
+        if (node.isFolder) return true
+        if (node.slugSegment === "projects" || node.slugSegment === "handlers") return true
+        if (node.slug === "index") return true
+        const slug = node.slug || ''
+        // Show only .zh files
+        return slug.endsWith('.zh') || slug.endsWith('-zh')
+      })
+    } else {
+      trie.filter((node) => {
+        if (node.isFolder) return true
+        if (node.slugSegment === "projects" || node.slugSegment === "handlers") return true
+        if (node.slug === "index") return true
+        const slug = node.slug || ''
+        // Show only .en files or files without language suffix
+        return slug.endsWith('.en') || slug.endsWith('-en') || 
+               (!slug.includes('.zh') && !slug.includes('-zh'))
+      })
+    }
 
     // Get folder paths for state management
     const folderPaths = trie.getFolderPaths()

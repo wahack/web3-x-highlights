@@ -28,6 +28,8 @@ import ConditionalRender from "./ConditionalRender"
 import TrendingRank from "./TrendingRank"
 import TagCloud from "./TagCloud"
 import StatsCards from "./StatsCards"
+import LanguageSwitcher from "./LanguageSwitcher"
+import LanguageDetection from "./LanguageDetection"
 
 export {
   ArticleTitle,
@@ -60,4 +62,6 @@ export {
   TrendingRank,
   TagCloud,
   StatsCards,
+  LanguageSwitcher,
+  LanguageDetection,
 }

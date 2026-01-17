@@ -40,11 +40,30 @@ function projectNameToFilename(projectName) {
 }
 
 /**
+ * Check if a file is a markdown file (supports .md, .en.md, .zh.md)
+ * Excludes index.md and files in subdirectories
+ */
+function isMarkdownFile(filename, baseDir = docsDir) {
+  // Check if file is in a subdirectory (not in baseDir root)
+  const filePath = path.join(baseDir, filename);
+  const relativePath = path.relative(baseDir, filePath);
+  if (relativePath.includes(path.sep)) {
+    return false; // File is in a subdirectory, skip it
+  }
+  
+  // Support .md, .en.md, .zh.md files, but exclude index.md
+  return (filename.endsWith('.md') || 
+          filename.endsWith('.en.md') || 
+          filename.endsWith('.zh.md')) && 
+         filename !== 'index.md';
+}
+
+/**
  * Scan all markdown files to extract project names
  */
 async function scanProjects() {
   const files = await fs.readdir(docsDir);
-  const mdFiles = files.filter(f => f.endsWith('.md') && f !== 'index.md');
+  const mdFiles = files.filter(f => isMarkdownFile(f));
   
   const projectMap = new Map(); // fullName -> coreName
   const projectFiles = new Map(); // coreName -> Set of files mentioning it
@@ -82,7 +101,7 @@ async function scanProjects() {
  */
 async function scanHandlers() {
   const files = await fs.readdir(docsDir);
-  const mdFiles = files.filter(f => f.endsWith('.md') && f !== 'index.md');
+  const mdFiles = files.filter(f => isMarkdownFile(f));
   
   const handlerSet = new Set(); // All unique handler usernames
   const handlerFiles = new Map(); // username -> Set of files mentioning it
@@ -184,7 +203,7 @@ async function createHandlerFiles(handlerFiles) {
  */
 async function replaceProjectLinks(projectMap) {
   const files = await fs.readdir(docsDir);
-  const mdFiles = files.filter(f => f.endsWith('.md') && f !== 'index.md');
+  const mdFiles = files.filter(f => isMarkdownFile(f));
   
   for (const file of mdFiles) {
     const filePath = path.join(docsDir, file);
@@ -216,7 +235,7 @@ async function replaceProjectLinks(projectMap) {
  */
 async function replaceHandlerLinks(handlerSet) {
   const files = await fs.readdir(docsDir);
-  const mdFiles = files.filter(f => f.endsWith('.md') && f !== 'index.md');
+  const mdFiles = files.filter(f => isMarkdownFile(f));
   
   for (const file of mdFiles) {
     const filePath = path.join(docsDir, file);

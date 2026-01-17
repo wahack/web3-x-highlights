@@ -78,8 +78,8 @@ const sortByDateDescending = (a, b) => {
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
-  afterBody: [],
+  header: [Component.LanguageSwitcher()],
+  afterBody: [Component.LanguageDetection()],
   footer: Component.Footer({
     links: {
       // GitHub: "https://github.com/jackyzha0/quartz",
@@ -127,6 +127,16 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer({
       sortFn: sortByDateDescending,
+      filterFn: (node) => {
+        // Always show folders, projects, handlers, and index
+        if (node.isFolder) return true
+        if (node.slugSegment === "projects" || node.slugSegment === "handlers") return true
+        if (node.slug === "index") return true
+        
+        // Filter will be done on client side based on current page language
+        // For now, show all files (client script will filter)
+        return true
+      },
     }),
   ],
   right: [
@@ -140,7 +150,11 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  beforeBody: [
+    Component.Breadcrumbs(), 
+    Component.ArticleTitle(), 
+    Component.ContentMeta()
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
@@ -155,6 +169,16 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Component.Explorer({
       sortFn: sortByDateDescending,
+      filterFn: (node) => {
+        // Always show folders, projects, handlers, and index
+        if (node.isFolder) return true
+        if (node.slugSegment === "projects" || node.slugSegment === "handlers") return true
+        if (node.slug === "index") return true
+        
+        // Filter will be done on client side based on current page language
+        // For now, show all files (client script will filter)
+        return true
+      },
     }),
   ],
   right: [],

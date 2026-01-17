@@ -1,1277 +1,1418 @@
 {
   "projects": [
     {
-      "name": "zetarium",
-      "count": 6,
+      "name": "alignerz-labs",
+      "count": 11,
       "dates": [
-        "January 12, 2026",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 16, 2026",
-        "January 9, 2026"
+        "December 23, 2025.en",
+        "December 24, 2025.en",
+        "December 25, 2025.en",
+        "December 26, 2025.en",
+        "December 27, 2025.en",
+        "December 29, 2025.en",
+        "December 31, 2025.en",
+        "January 10, 2026.en",
+        "January 3, 2026.en",
+        "January 6, 2026.en",
+        "January 9, 2026.en"
       ],
-      "recentMentions": 6,
-      "trend": "up",
-      "recentCount": 5
+      "recentMentions": 11,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "hyperliquid",
       "count": 8,
       "dates": [
-        "December 24, 2025",
-        "January 12, 2026",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 3, 2026",
-        "January 5, 2026",
-        "January 9, 2026"
+        "December 24, 2025.en",
+        "January 12, 2026.en",
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en",
+        "January 3, 2026.en",
+        "January 5, 2026.en",
+        "January 9, 2026.en"
       ],
       "recentMentions": 8,
-      "trend": "up",
-      "recentCount": 4
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "altura",
       "count": 8,
       "dates": [
-        "December 29, 2025",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 16, 2026",
-        "January 3, 2026",
-        "January 6, 2026",
-        "January 9, 2026"
+        "December 29, 2025.en",
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en",
+        "January 16, 2026.en",
+        "January 3, 2026.en",
+        "January 6, 2026.en",
+        "January 9, 2026.en"
       ],
       "recentMentions": 8,
-      "trend": "up",
-      "recentCount": 4
-    },
-    {
-      "name": "deepnode",
-      "count": 5,
-      "dates": [
-        "January 10, 2026",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 9, 2026"
-      ],
-      "recentMentions": 5,
-      "trend": "up",
-      "recentCount": 4
-    },
-    {
-      "name": "fogo",
-      "count": 5,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 16, 2026",
-        "January 4, 2026"
-      ],
-      "recentMentions": 5,
-      "trend": "up",
-      "recentCount": 4
-    },
-    {
-      "name": "termmax",
-      "count": 4,
-      "dates": [
-        "January 10, 2026",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 4
-    },
-    {
-      "name": "sight",
-      "count": 4,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 16, 2026"
-      ],
-      "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 4
-    },
-    {
-      "name": "owl",
-      "count": 4,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 16, 2026"
-      ],
-      "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 4
-    },
-    {
-      "name": "mira",
-      "count": 4,
-      "dates": [
-        "December 24, 2025",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "tempo",
-      "count": 4,
-      "dates": [
-        "December 27, 2025",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "genius",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "megaeth",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "nirvana",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "edel",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "lorafinance",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "astra",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "rhuna",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "espresso",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "rialo",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "wallchain",
-      "count": 5,
-      "dates": [
-        "December 29, 2025",
-        "December 31, 2025",
-        "January 11, 2026",
-        "January 15, 2026",
-        "January 4, 2026"
-      ],
-      "recentMentions": 5,
-      "trend": "up",
-      "recentCount": 2
-    },
-    {
-      "name": "polymarket",
-      "count": 5,
-      "dates": [
-        "December 31, 2025",
-        "January 10, 2026",
-        "January 12, 2026",
-        "January 6, 2026",
-        "January 9, 2026"
-      ],
-      "recentMentions": 5,
-      "trend": "up",
-      "recentCount": 2
-    },
-    {
-      "name": "zama",
-      "count": 3,
-      "dates": [
-        "December 24, 2025",
-        "January 10, 2026",
-        "January 12, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 2
-    },
-    {
-      "name": "arbus",
-      "count": 2,
-      "dates": [
-        "January 10, 2026",
-        "January 16, 2026"
-      ],
-      "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 2
-    },
-    {
-      "name": "brev",
-      "count": 2,
-      "dates": [
-        "January 10, 2026",
-        "January 11, 2026"
-      ],
-      "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 2
-    },
-    {
-      "name": "wallchainwardenprotocol",
-      "count": 2,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026"
-      ],
-      "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 2
-    },
-    {
-      "name": "alignerz-labs",
-      "count": 11,
-      "dates": [
-        "December 23, 2025",
-        "December 24, 2025",
-        "December 25, 2025",
-        "December 26, 2025",
-        "December 27, 2025",
-        "December 29, 2025",
-        "December 31, 2025",
-        "January 10, 2026",
-        "January 3, 2026",
-        "January 6, 2026",
-        "January 9, 2026"
-      ],
-      "recentMentions": 11,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "variational",
       "count": 6,
       "dates": [
-        "December 31, 2025",
-        "January 12, 2026",
-        "January 3, 2026",
-        "January 5, 2026",
-        "January 6, 2026",
-        "January 9, 2026"
+        "December 31, 2025.en",
+        "January 12, 2026.en",
+        "January 3, 2026.en",
+        "January 5, 2026.en",
+        "January 6, 2026.en",
+        "January 9, 2026.en"
       ],
       "recentMentions": 6,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "zetarium",
+      "count": 6,
+      "dates": [
+        "January 12, 2026.en",
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en",
+        "January 16, 2026.en",
+        "January 9, 2026.en"
+      ],
+      "recentMentions": 6,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "warden-protocol",
       "count": 5,
       "dates": [
-        "December 24, 2025",
-        "December 25, 2025",
-        "January 11, 2026",
-        "January 5, 2026",
-        "January 9, 2026"
+        "December 24, 2025.en",
+        "December 25, 2025.en",
+        "January 11, 2026.en",
+        "January 5, 2026.en",
+        "January 9, 2026.en"
       ],
       "recentMentions": 5,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "lighter",
       "count": 5,
       "dates": [
-        "December 25, 2025",
-        "December 29, 2025",
-        "December 31, 2025",
-        "January 12, 2026",
-        "January 3, 2026"
+        "December 25, 2025.en",
+        "December 29, 2025.en",
+        "December 31, 2025.en",
+        "January 12, 2026.en",
+        "January 3, 2026.en"
       ],
       "recentMentions": 5,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "wallchain",
+      "count": 5,
+      "dates": [
+        "December 29, 2025.en",
+        "December 31, 2025.en",
+        "January 11, 2026.en",
+        "January 15, 2026.en",
+        "January 4, 2026.en"
+      ],
+      "recentMentions": 5,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "polymarket",
+      "count": 5,
+      "dates": [
+        "December 31, 2025.en",
+        "January 10, 2026.en",
+        "January 12, 2026.en",
+        "January 6, 2026.en",
+        "January 9, 2026.en"
+      ],
+      "recentMentions": 5,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "deepnode",
+      "count": 5,
+      "dates": [
+        "January 10, 2026.en",
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en",
+        "January 9, 2026.en"
+      ],
+      "recentMentions": 5,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "fogo",
+      "count": 5,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en",
+        "January 16, 2026.en",
+        "January 4, 2026.en"
+      ],
+      "recentMentions": 5,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "heyelsaai",
       "count": 4,
       "dates": [
-        "December 23, 2025",
-        "December 24, 2025",
-        "January 11, 2026",
-        "January 4, 2026"
+        "December 23, 2025.en",
+        "December 24, 2025.en",
+        "January 11, 2026.en",
+        "January 4, 2026.en"
       ],
       "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "idos-network",
+      "count": 4,
+      "dates": [
+        "December 24, 2025.en",
+        "December 25, 2025.en",
+        "January 3, 2026.en",
+        "January 9, 2026.en"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "standx",
+      "count": 4,
+      "dates": [
+        "December 24, 2025.en",
+        "December 25, 2025.en",
+        "December 31, 2025.en",
+        "January 3, 2026.en"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "brevis",
+      "count": 4,
+      "dates": [
+        "December 24, 2025.en",
+        "December 25, 2025.en",
+        "December 26, 2025.en",
+        "December 31, 2025.en"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "mira",
+      "count": 4,
+      "dates": [
+        "December 24, 2025.en",
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "bluwhale",
       "count": 4,
       "dates": [
-        "December 26, 2025",
-        "December 30, 2025",
-        "January 12, 2026",
-        "January 9, 2026"
+        "December 26, 2025.en",
+        "December 30, 2025.en",
+        "January 12, 2026.en",
+        "January 9, 2026.en"
       ],
       "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "tempo",
+      "count": 4,
+      "dates": [
+        "December 27, 2025.en",
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "ferra-protocol",
       "count": 4,
       "dates": [
-        "December 29, 2025",
-        "December 30, 2025",
-        "January 12, 2026",
-        "January 6, 2026"
+        "December 29, 2025.en",
+        "December 30, 2025.en",
+        "January 12, 2026.en",
+        "January 6, 2026.en"
       ],
       "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "termmax",
+      "count": 4,
+      "dates": [
+        "January 10, 2026.en",
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "sight",
+      "count": 4,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en",
+        "January 16, 2026.en"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "owl",
+      "count": 4,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en",
+        "January 16, 2026.en"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "bybit",
+      "count": 3,
+      "dates": [
+        "December 23, 2025.en",
+        "December 26, 2025.en",
+        "December 30, 2025.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "zama",
+      "count": 3,
+      "dates": [
+        "December 24, 2025.en",
+        "January 10, 2026.en",
+        "January 12, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "chain_gpt",
+      "count": 3,
+      "dates": [
+        "December 25, 2025.en",
+        "December 27, 2025.en",
+        "January 9, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "helios",
       "count": 3,
       "dates": [
-        "December 25, 2025",
-        "December 29, 2025",
-        "January 11, 2026"
+        "December 25, 2025.en",
+        "December 29, 2025.en",
+        "January 11, 2026.en"
       ],
       "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "superform",
+      "count": 3,
+      "dates": [
+        "December 25, 2025.en",
+        "December 29, 2025.en",
+        "January 3, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "kindred",
+      "count": 3,
+      "dates": [
+        "December 26, 2025.en",
+        "December 29, 2025.en",
+        "December 31, 2025.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "chaingpt",
       "count": 3,
       "dates": [
-        "December 26, 2025",
-        "January 10, 2026",
-        "January 4, 2026"
+        "December 26, 2025.en",
+        "January 10, 2026.en",
+        "January 4, 2026.en"
       ],
       "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "spaace_io",
+      "count": 3,
+      "dates": [
+        "December 27, 2025.en",
+        "December 29, 2025.en",
+        "January 4, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "inference-labs",
       "count": 3,
       "dates": [
-        "December 29, 2025",
-        "December 31, 2025",
-        "January 12, 2026"
+        "December 29, 2025.en",
+        "December 31, 2025.en",
+        "January 12, 2026.en"
       ],
       "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "perceptronntwk",
       "count": 3,
       "dates": [
-        "December 31, 2025",
-        "January 11, 2026",
-        "January 8,2026"
+        "December 31, 2025.en",
+        "January 11, 2026.en",
+        "January 8,2026.en"
       ],
       "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "hypercroc",
       "count": 3,
       "dates": [
-        "December 31, 2025",
-        "January 16, 2026",
-        "January 4, 2026"
+        "December 31, 2025.en",
+        "January 16, 2026.en",
+        "January 4, 2026.en"
       ],
       "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "genius",
+      "count": 3,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "megaeth",
+      "count": 3,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "nirvana",
+      "count": 3,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "edel",
+      "count": 3,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "lorafinance",
+      "count": 3,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "astra",
+      "count": 3,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "rhuna",
+      "count": 3,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "espresso",
+      "count": 3,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "rialo",
+      "count": 3,
+      "dates": [
+        "January 13, 2026.en",
+        "January 14, 2026.en",
+        "January 15, 2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "alignerz_labs",
+      "count": 3,
+      "dates": [
+        "January 4, 2026.en",
+        "January 5, 2026.en",
+        "January 8,2026.en"
+      ],
+      "recentMentions": 3,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "beldex",
+      "count": 2,
+      "dates": [
+        "December 23, 2025.en",
+        "December 26, 2025.en"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "codexero",
+      "count": 2,
+      "dates": [
+        "December 24, 2025.en",
+        "January 3, 2026.en"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "river",
       "count": 2,
       "dates": [
-        "December 24, 2025",
-        "January 12, 2026"
+        "December 24, 2025.en",
+        "January 12, 2026.en"
       ],
       "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "rayls-labs",
       "count": 2,
       "dates": [
-        "December 24, 2025",
-        "January 11, 2026"
+        "December 24, 2025.en",
+        "January 11, 2026.en"
       ],
       "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
     },
     {
-      "name": "bluwhaleai",
+      "name": "mememax",
       "count": 2,
       "dates": [
-        "December 29, 2025",
-        "January 10, 2026"
+        "December 24, 2025.en",
+        "December 25, 2025.en"
       ],
       "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
     },
     {
-      "name": "based",
+      "name": "kaito",
       "count": 2,
       "dates": [
-        "December 29, 2025",
-        "January 12, 2026"
+        "December 24, 2025.en",
+        "January 4, 2026.en"
       ],
       "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
     },
     {
-      "name": "aixc",
+      "name": "alturax",
       "count": 2,
       "dates": [
-        "January 10, 2026",
-        "January 9, 2026"
+        "December 25, 2025.en",
+        "December 31, 2025.en"
       ],
       "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
-    },
-    {
-      "name": "tauntcoin",
-      "count": 2,
-      "dates": [
-        "January 11, 2026",
-        "January 8,2026"
-      ],
-      "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
-    },
-    {
-      "name": "yom",
-      "count": 2,
-      "dates": [
-        "January 12, 2026",
-        "January 4, 2026"
-      ],
-      "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
-    },
-    {
-      "name": "fish",
-      "count": 2,
-      "dates": [
-        "January 12, 2026",
-        "January 8,2026"
-      ],
-      "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
-    },
-    {
-      "name": "mememax_fi",
-      "count": 2,
-      "dates": [
-        "January 12, 2026",
-        "January 3, 2026"
-      ],
-      "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
-    },
-    {
-      "name": "paradex",
-      "count": 2,
-      "dates": [
-        "January 12, 2026",
-        "January 3, 2026"
-      ],
-      "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
-    },
-    {
-      "name": "cascade",
-      "count": 2,
-      "dates": [
-        "January 12, 2026",
-        "January 3, 2026"
-      ],
-      "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
-    },
-    {
-      "name": "nado",
-      "count": 2,
-      "dates": [
-        "January 12, 2026",
-        "January 5, 2026"
-      ],
-      "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 1
-    },
-    {
-      "name": "nitrograph",
-      "count": 1,
-      "dates": [
-        "January 10, 2026"
-      ],
-      "recentMentions": 1,
-      "trend": "up",
-      "recentCount": 1
+      "trend": "stable",
+      "recentCount": 0
     }
   ],
   "handlers": [
     {
-      "name": "caring7517431",
-      "count": 17,
+      "name": "aixbt_agent",
+      "count": 50,
       "dates": [
-        "December 28, 2025",
-        "December 30, 2025",
-        "December 31, 2025",
-        "January 10, 2026",
-        "January 11, 2026",
-        "January 12, 2026",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 2, 2026",
-        "January 4, 2026",
-        "January 5, 2026",
-        "January 8,2026",
-        "January 9, 2026"
+        "January 1, 2026.en",
+        "January 1, 2026.zh",
+        "January 11, 2026.en",
+        "January 11, 2026.zh",
+        "January 13, 2026.en",
+        "January 13, 2026.zh",
+        "January 14, 2026.en",
+        "January 14, 2026.zh",
+        "January 15, 2026.en",
+        "January 15, 2026.zh",
+        "January 16, 2026.en",
+        "January 16, 2026.zh",
+        "January 3, 2026.en",
+        "January 3, 2026.zh",
+        "January 5, 2026.en",
+        "January 5, 2026.zh",
+        "January 7,2026.en",
+        "January 7,2026.zh",
+        "January 8,2026.en",
+        "January 8,2026.zh"
       ],
-      "recentMentions": 14,
-      "trend": "up",
-      "recentCount": 6
+      "recentMentions": 20,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
-      "name": "aixbt_agent",
-      "count": 25,
+      "name": "dami_btc",
+      "count": 34,
       "dates": [
-        "January 1, 2026",
-        "January 11, 2026",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 16, 2026",
-        "January 3, 2026",
-        "January 5, 2026",
-        "January 7,2026",
-        "January 8,2026"
+        "December 25, 2025.en",
+        "December 25, 2025.zh",
+        "December 29, 2025.en",
+        "December 29, 2025.zh"
       ],
-      "recentMentions": 10,
-      "trend": "up",
-      "recentCount": 5
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "caring7517431",
+      "count": 34,
+      "dates": [
+        "December 28, 2025.en",
+        "December 28, 2025.zh",
+        "December 30, 2025.en",
+        "December 30, 2025.zh",
+        "December 31, 2025.en",
+        "December 31, 2025.zh",
+        "January 10, 2026.en",
+        "January 10, 2026.zh",
+        "January 11, 2026.en",
+        "January 11, 2026.zh",
+        "January 12, 2026.en",
+        "January 12, 2026.zh",
+        "January 13, 2026.en",
+        "January 13, 2026.zh",
+        "January 14, 2026.en",
+        "January 14, 2026.zh",
+        "January 15, 2026.en",
+        "January 15, 2026.zh",
+        "January 2, 2026.en",
+        "January 2, 2026.zh",
+        "January 4, 2026.en",
+        "January 4, 2026.zh",
+        "January 5, 2026.en",
+        "January 5, 2026.zh",
+        "January 8,2026.en",
+        "January 8,2026.zh",
+        "January 9, 2026.en",
+        "January 9, 2026.zh"
+      ],
+      "recentMentions": 28,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "tianwen2031",
-      "count": 13,
+      "count": 26,
       "dates": [
-        "December 30, 2025",
-        "January 11, 2026",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 16, 2026",
-        "January 2, 2026",
-        "January 4, 2026",
-        "January 6, 2026",
-        "January 8,2026",
-        "January 9, 2026"
+        "December 30, 2025.en",
+        "December 30, 2025.zh",
+        "January 11, 2026.en",
+        "January 11, 2026.zh",
+        "January 13, 2026.en",
+        "January 13, 2026.zh",
+        "January 14, 2026.en",
+        "January 14, 2026.zh",
+        "January 15, 2026.en",
+        "January 15, 2026.zh",
+        "January 16, 2026.en",
+        "January 16, 2026.zh",
+        "January 2, 2026.en",
+        "January 2, 2026.zh",
+        "January 4, 2026.en",
+        "January 4, 2026.zh",
+        "January 6, 2026.en",
+        "January 6, 2026.zh",
+        "January 8,2026.en",
+        "January 8,2026.zh",
+        "January 9, 2026.en",
+        "January 9, 2026.zh"
       ],
-      "recentMentions": 11,
-      "trend": "up",
-      "recentCount": 5
+      "recentMentions": 22,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
-      "name": "qxgy88",
-      "count": 7,
+      "name": "thormichaey",
+      "count": 24,
       "dates": [
-        "December 23, 2025",
-        "January 10, 2026",
-        "January 11, 2026",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
+        "January 8,2026.en",
+        "January 8,2026.zh"
       ],
-      "recentMentions": 6,
-      "trend": "up",
-      "recentCount": 5
-    },
-    {
-      "name": "fushengzui2",
-      "count": 4,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 16, 2026"
-      ],
-      "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 4
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "natalia77351991",
-      "count": 11,
+      "count": 22,
       "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 16, 2026",
-        "January 4, 2026"
+        "January 13, 2026.en",
+        "January 13, 2026.zh",
+        "January 14, 2026.en",
+        "January 14, 2026.zh",
+        "January 16, 2026.en",
+        "January 16, 2026.zh",
+        "January 4, 2026.en",
+        "January 4, 2026.zh"
       ],
-      "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 3
+      "recentMentions": 8,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "alphapackedhq",
+      "count": 20,
+      "dates": [
+        "January 1, 2026.en",
+        "January 1, 2026.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "web3tuhao",
+      "count": 18,
+      "dates": [
+        "January 7,2026.en",
+        "January 7,2026.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "pawnie_",
+      "count": 16,
+      "dates": [
+        "December 25, 2025.en",
+        "December 25, 2025.zh",
+        "January 1, 2026.en",
+        "January 1, 2026.zh",
+        "January 11, 2026.en",
+        "January 11, 2026.zh",
+        "January 3, 2026.en",
+        "January 3, 2026.zh",
+        "January 8,2026.en",
+        "January 8,2026.zh"
+      ],
+      "recentMentions": 10,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "btc2ai",
-      "count": 8,
+      "count": 16,
       "dates": [
-        "December 29, 2025",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 3, 2026",
-        "January 6, 2026"
+        "December 29, 2025.en",
+        "December 29, 2025.zh",
+        "January 13, 2026.en",
+        "January 13, 2026.zh",
+        "January 14, 2026.en",
+        "January 14, 2026.zh",
+        "January 15, 2026.en",
+        "January 15, 2026.zh",
+        "January 3, 2026.en",
+        "January 3, 2026.zh",
+        "January 6, 2026.en",
+        "January 6, 2026.zh"
+      ],
+      "recentMentions": 12,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "cryptolevier",
+      "count": 16,
+      "dates": [
+        "January 1, 2026.en",
+        "January 1, 2026.zh",
+        "January 11, 2026.en",
+        "January 11, 2026.zh",
+        "January 3, 2026.en",
+        "January 3, 2026.zh"
       ],
       "recentMentions": 6,
-      "trend": "up",
-      "recentCount": 3
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "jeremmybold",
+      "count": 14,
+      "dates": [
+        "December 23, 2025.en",
+        "December 23, 2025.zh",
+        "December 24, 2025.en",
+        "December 24, 2025.zh",
+        "December 26, 2025.en",
+        "December 26, 2025.zh",
+        "December 27, 2025.en",
+        "December 27, 2025.zh",
+        "December 29, 2025.en",
+        "December 29, 2025.zh"
+      ],
+      "recentMentions": 10,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "qxgy88",
+      "count": 14,
+      "dates": [
+        "December 23, 2025.en",
+        "December 23, 2025.zh",
+        "January 10, 2026.en",
+        "January 10, 2026.zh",
+        "January 11, 2026.en",
+        "January 11, 2026.zh",
+        "January 13, 2026.en",
+        "January 13, 2026.zh",
+        "January 14, 2026.en",
+        "January 14, 2026.zh",
+        "January 15, 2026.en",
+        "January 15, 2026.zh"
+      ],
+      "recentMentions": 12,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "li888real",
+      "count": 14,
+      "dates": [
+        "December 25, 2025.en",
+        "December 25, 2025.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "liuyanw618",
+      "count": 14,
+      "dates": [
+        "December 28, 2025.en",
+        "December 28, 2025.zh",
+        "January 10, 2026.en",
+        "January 10, 2026.zh",
+        "January 2, 2026.en",
+        "January 2, 2026.zh",
+        "January 6, 2026.en",
+        "January 6, 2026.zh",
+        "January 7,2026.en",
+        "January 7,2026.zh"
+      ],
+      "recentMentions": 10,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "web3heinu",
+      "count": 14,
+      "dates": [
+        "January 5, 2026.en",
+        "January 5, 2026.zh",
+        "January 6, 2026.en",
+        "January 6, 2026.zh"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "gushanjishui",
+      "count": 12,
+      "dates": [
+        "December 24, 2025.en",
+        "December 24, 2025.zh",
+        "December 27, 2025.en",
+        "December 27, 2025.zh"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "musty_hasheedu",
+      "count": 12,
+      "dates": [
+        "January 1, 2026.en",
+        "January 1, 2026.zh",
+        "January 7,2026.en",
+        "January 7,2026.zh"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "gkisokay",
+      "count": 12,
+      "dates": [
+        "January 11, 2026.en",
+        "January 11, 2026.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "norbertf76",
-      "count": 6,
+      "count": 12,
       "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
+        "January 13, 2026.en",
+        "January 13, 2026.zh",
+        "January 14, 2026.en",
+        "January 14, 2026.zh",
+        "January 15, 2026.en",
+        "January 15, 2026.zh"
       ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
+      "recentMentions": 6,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "crypto_laodong",
+      "count": 12,
+      "dates": [
+        "January 4, 2026.en",
+        "January 4, 2026.zh",
+        "January 5, 2026.en",
+        "January 5, 2026.zh",
+        "January 6, 2026.en",
+        "January 6, 2026.zh"
+      ],
+      "recentMentions": 6,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "xiaoming_web3",
+      "count": 10,
+      "dates": [
+        "December 27, 2025.en",
+        "December 27, 2025.zh",
+        "December 29, 2025.en",
+        "December 29, 2025.zh",
+        "January 12, 2026.en",
+        "January 12, 2026.zh"
+      ],
+      "recentMentions": 6,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "0xzhaozhao",
+      "count": 10,
+      "dates": [
+        "December 27, 2025.en",
+        "December 27, 2025.zh",
+        "January 11, 2026.en",
+        "January 11, 2026.zh",
+        "January 6, 2026.en",
+        "January 6, 2026.zh"
+      ],
+      "recentMentions": 6,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "mr57814170",
-      "count": 5,
+      "count": 10,
       "dates": [
-        "December 30, 2025",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026",
-        "January 9, 2026"
+        "December 30, 2025.en",
+        "December 30, 2025.zh",
+        "January 13, 2026.en",
+        "January 13, 2026.zh",
+        "January 14, 2026.en",
+        "January 14, 2026.zh",
+        "January 15, 2026.en",
+        "January 15, 2026.zh",
+        "January 9, 2026.en",
+        "January 9, 2026.zh"
       ],
-      "recentMentions": 5,
-      "trend": "up",
-      "recentCount": 3
+      "recentMentions": 10,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "web3caff_zh",
+      "count": 10,
+      "dates": [
+        "December 30, 2025.en",
+        "December 30, 2025.zh",
+        "December 31, 2025.en",
+        "December 31, 2025.zh",
+        "January 16, 2026.en",
+        "January 16, 2026.zh",
+        "January 6, 2026.en",
+        "January 6, 2026.zh"
+      ],
+      "recentMentions": 8,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "youyou8178",
+      "count": 10,
+      "dates": [
+        "December 31, 2025.en",
+        "December 31, 2025.zh",
+        "January 6, 2026.en",
+        "January 6, 2026.zh",
+        "January 8,2026.en",
+        "January 8,2026.zh",
+        "January 9, 2026.en",
+        "January 9, 2026.zh"
+      ],
+      "recentMentions": 8,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "airdropalchemis",
+      "count": 10,
+      "dates": [
+        "January 12, 2026.en",
+        "January 12, 2026.zh",
+        "January 3, 2026.en",
+        "January 3, 2026.zh",
+        "January 5, 2026.en",
+        "January 5, 2026.zh",
+        "January 9, 2026.en",
+        "January 9, 2026.zh"
+      ],
+      "recentMentions": 8,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "lukashuettis",
+      "count": 10,
+      "dates": [
+        "January 7,2026.en",
+        "January 7,2026.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "sirajmsy",
+      "count": 10,
+      "dates": [
+        "January 8,2026.en",
+        "January 8,2026.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "claudiannnn",
+      "count": 8,
+      "dates": [
+        "December 24, 2025.en",
+        "December 24, 2025.zh",
+        "December 27, 2025.en",
+        "December 27, 2025.zh",
+        "December 29, 2025.en",
+        "December 29, 2025.zh",
+        "January 2, 2026.en",
+        "January 2, 2026.zh"
+      ],
+      "recentMentions": 8,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "icebergrgd",
+      "count": 8,
+      "dates": [
+        "December 24, 2025.en",
+        "December 24, 2025.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "titan_web3_",
+      "count": 8,
+      "dates": [
+        "December 25, 2025.en",
+        "December 25, 2025.zh",
+        "December 26, 2025.en",
+        "December 26, 2025.zh",
+        "January 3, 2026.en",
+        "January 3, 2026.zh"
+      ],
+      "recentMentions": 6,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "starx_okx",
+      "count": 8,
+      "dates": [
+        "December 25, 2025.en",
+        "December 25, 2025.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "airdrops_io",
+      "count": 8,
+      "dates": [
+        "December 29, 2025.en",
+        "December 29, 2025.zh",
+        "January 16, 2026.en",
+        "January 16, 2026.zh",
+        "January 9, 2026.en",
+        "January 9, 2026.zh"
+      ],
+      "recentMentions": 6,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "0xxiaoc",
+      "count": 8,
+      "dates": [
+        "December 30, 2025.en",
+        "December 30, 2025.zh",
+        "December 31, 2025.en",
+        "December 31, 2025.zh",
+        "January 16, 2026.en",
+        "January 16, 2026.zh",
+        "January 4, 2026.en",
+        "January 4, 2026.zh"
+      ],
+      "recentMentions": 8,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "web3_xiaoyao",
-      "count": 4,
+      "count": 8,
       "dates": [
-        "December 31, 2025",
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
+        "December 31, 2025.en",
+        "December 31, 2025.zh",
+        "January 13, 2026.en",
+        "January 13, 2026.zh",
+        "January 14, 2026.en",
+        "January 14, 2026.zh",
+        "January 15, 2026.en",
+        "January 15, 2026.zh"
       ],
-      "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 3
+      "recentMentions": 8,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
-      "name": "jeezygamez",
-      "count": 3,
+      "name": "caicai1953",
+      "count": 8,
       "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
+        "December 31, 2025.en",
+        "December 31, 2025.zh",
+        "January 11, 2026.en",
+        "January 11, 2026.zh",
+        "January 4, 2026.en",
+        "January 4, 2026.zh"
       ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "chochou33",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "yanyanrialo",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "0xspout",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "0xziggy_eth",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "shepushohel",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "0xykp",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "airdropalertcom",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "elconross",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "hzkj99",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "lumaogou_web3",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "candydao_leaf",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "btc99m",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "alphascopedash",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "w3_surfer",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "3xpl0it_",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "dayothev1",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "tkr_trading",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "bobbyong",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "0xcryptonaut",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "leoninweb3",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "web3pig",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "websea_cn",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "li_sheng84841",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "enesonchain",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "neytri_alpha",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "upsideplug",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "web3chaw",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "dominolu",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "00xhantianzun",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "0xcastano",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "sb_wryta",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "justphillz",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "abgweb3",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "zkshedy",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "kingbo53072246",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
-    },
-    {
-      "name": "qiuset",
-      "count": 3,
-      "dates": [
-        "January 13, 2026",
-        "January 14, 2026",
-        "January 15, 2026"
-      ],
-      "recentMentions": 3,
-      "trend": "up",
-      "recentCount": 3
+      "recentMentions": 6,
+      "trend": "stable",
+      "recentCount": 0
     },
     {
       "name": "web3annie",
-      "count": 4,
+      "count": 8,
       "dates": [
-        "January 10, 2026",
-        "January 16, 2026",
-        "January 2, 2026",
-        "January 5, 2026"
+        "January 10, 2026.en",
+        "January 10, 2026.zh",
+        "January 16, 2026.en",
+        "January 16, 2026.zh",
+        "January 2, 2026.en",
+        "January 2, 2026.zh",
+        "January 5, 2026.en",
+        "January 5, 2026.zh"
+      ],
+      "recentMentions": 8,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "412673403peter",
+      "count": 8,
+      "dates": [
+        "January 12, 2026.en",
+        "January 12, 2026.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "fushengzui2",
+      "count": 8,
+      "dates": [
+        "January 13, 2026.en",
+        "January 13, 2026.zh",
+        "January 14, 2026.en",
+        "January 14, 2026.zh",
+        "January 15, 2026.en",
+        "January 15, 2026.zh",
+        "January 16, 2026.en",
+        "January 16, 2026.zh"
+      ],
+      "recentMentions": 8,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "web3_salem",
+      "count": 8,
+      "dates": [
+        "January 3, 2026.en",
+        "January 3, 2026.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "0xskypots",
+      "count": 8,
+      "dates": [
+        "January 5, 2026.en",
+        "January 5, 2026.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "dmoonguy",
+      "count": 8,
+      "dates": [
+        "January 8,2026.en",
+        "January 8,2026.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "oduduabasi16",
+      "count": 6,
+      "dates": [
+        "December 23, 2025.en",
+        "December 23, 2025.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "theweb3hawk",
+      "count": 6,
+      "dates": [
+        "December 23, 2025.en",
+        "December 23, 2025.zh",
+        "December 24, 2025.en",
+        "December 24, 2025.zh"
       ],
       "recentMentions": 4,
-      "trend": "up",
-      "recentCount": 2
+      "trend": "stable",
+      "recentCount": 0
     },
     {
-      "name": "carvalhovitor84",
-      "count": 2,
+      "name": "omniarb",
+      "count": 6,
       "dates": [
-        "January 10, 2026",
-        "January 11, 2026"
+        "December 23, 2025.en",
+        "December 23, 2025.zh"
       ],
       "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 2
+      "trend": "stable",
+      "recentCount": 0
     },
     {
-      "name": "blockchainrese6",
-      "count": 2,
+      "name": "believer_inweb3",
+      "count": 6,
       "dates": [
-        "January 10, 2026",
-        "January 11, 2026"
+        "December 24, 2025.en",
+        "December 24, 2025.zh"
       ],
       "recentMentions": 2,
-      "trend": "up",
-      "recentCount": 2
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "tusinap",
+      "count": 6,
+      "dates": [
+        "December 25, 2025.en",
+        "December 25, 2025.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "web3reis",
+      "count": 6,
+      "dates": [
+        "December 25, 2025.en",
+        "December 25, 2025.zh"
+      ],
+      "recentMentions": 2,
+      "trend": "stable",
+      "recentCount": 0
+    },
+    {
+      "name": "kharather",
+      "count": 6,
+      "dates": [
+        "December 25, 2025.en",
+        "December 25, 2025.zh",
+        "December 26, 2025.en",
+        "December 26, 2025.zh"
+      ],
+      "recentMentions": 4,
+      "trend": "stable",
+      "recentCount": 0
     }
   ],
   "stats": {
     "totalProjects": 302,
-    "totalHandlers": 920,
-    "totalArticles": 25,
+    "totalHandlers": 923,
+    "totalArticles": 50,
     "topProject": "alignerz-labs",
     "topHandler": "aixbt_agent"
   },
-  "generatedAt": "2026-01-16T10:54:38.714Z"
+  "generatedAt": "2026-01-17T09:41:44.534Z"
 }
