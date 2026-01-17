@@ -11,6 +11,7 @@ header {
   align-items: center;
   margin: 2rem 0;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 header h1 {
